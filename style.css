@@ -1,0 +1,132 @@
+:root{
+   /*### Primary*/
+
+    --Blue-500: hsl(215, 51%, 70%);
+    --Cyan-400: hsl(178, 100%, 50%);
+
+/*### Neutral*/
+
+    --Blue-950-main-BG: hsl(217, 54%, 11%);
+    --Blue-900-card-BG: hsl(216, 50%, 16%);
+    --Blue-800-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: Outfit, serif;
+    background-color: var(--Blue-950-main-BG);
+    padding: 1em;
+    color: var(--Blue-500);
+}
+.container{
+    background-color: rgba(12,23,41,255);
+    border-radius: 2em;
+    padding: 1.25em;
+    padding-bottom: 3em;
+    width: 350px;
+}
+.nft-card{
+    background-color: var(--Blue-900-card-BG);
+    padding: 1.5em;
+    border-radius: 1em;
+}
+.nft-images{
+    position: relative;
+}
+.nft-images:hover{
+    cursor: pointer;
+}
+.nft-images img{
+    width: 100%;
+    border-radius: 0.75em;
+}
+.eye{
+    position: absolute;
+    display: block;
+    border-radius: 0.75em;
+    top: 0;
+    left: 0;
+    background-color: var(--Cyan-400);
+    opacity: 0;
+    transition: all 250ms ease-in-out;
+}
+.eye:hover{
+    opacity: 0.6;
+}
+.eye img{
+    width: 100%;
+    padding: 7em;
+    display: block;
+    background-color: var(--Cyan-400);
+}
+.nft-name h1{
+    font-size: 1.25em;
+    color: var(--White);
+    margin: 1em auto;
+    font-weight: 400;
+    transition: all 250ms ease-in-out;
+}
+.nft-name p{
+    font-size: 0.9em;
+    font-weight: 300;
+    line-height: 1.75em;
+}
+.nft-price-time{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1em auto;
+    padding-bottom: 1em;
+    border-bottom: 1px solid var(--Blue-800-line);
+}
+.price{
+    display: flex;
+    font-size: 0.6em;
+    gap: 0.5em;
+    color: var(--Cyan-400);
+    align-items: center;
+}
+.price h2{
+    font-weight: 400;
+}
+.time{
+    display: flex;
+    font-size: 0.7em;
+    gap: 0.5em;
+}
+.time h3{
+    font-weight: 400;
+}
+.author{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.author img{
+    width: 12%;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+}
+.author h4{
+    font-weight: 300;
+    font-size: 0.85em;
+    transition: all 250ms ease-in-out;
+}
+.author h4:hover, .author span:hover, .nft-name h1:hover{
+    cursor: pointer;
+    color: var(--Cyan-400);
+}
+.author span{
+    color: var(--White);
+    transition: all 250ms ease-in-out;
+}
