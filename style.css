@@ -51,23 +51,29 @@ body{
     border-radius: 0.75em;
 }
 .eye{
-    position: absolute;
     display: block;
+    align-content: center;
     border-radius: 0.75em;
-    top: 0;
-    left: 0;
-    background-color: var(--Cyan-400);
-    opacity: 0;
+    background-color: hsla(178, 100%, 50%, 0);
+    background-image: url(./images/image-equilibrium.jpg);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 16em;
     transition: all 250ms ease-in-out;
-}
-.eye:hover{
-    opacity: 0.6;
 }
 .eye img{
     width: 100%;
     padding: 7em;
-    display: block;
-    background-color: var(--Cyan-400);
+    opacity: 0;
+}
+.eye img:hover{
+    opacity: 1;
+}
+.eye:hover{
+    
+    background-color: hsla(178, 100%, 50%, 0.5);
 }
 .nft-name h1{
     font-size: 1.25em;
